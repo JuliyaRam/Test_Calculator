@@ -82,20 +82,7 @@ public class Main {
         }
     }
 
-    // Функция проверяет, является ли строковый операнд римским числом
-    private static boolean isRim(String num) {
-        // Для этого создается массив rimNumArray, содержащий все возможные значения римских чисел.
-        String[] rimNumArray = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XX", "XI", "XII", "L", "C"};
-        for (String rimNum : rimNumArray) {         // перебор значений в массиве с помощью цикла for
-            if (rimNum.equals(num)) {               // проверка каждого значения на совпадение с num с помощью условия if.
-                return true;                        // true, если num является римским числом
-            }
-        }
-        return false;
-    }
-
-
-    // Функция для выполнения операций с числами.
+   // Функция для выполнения операций с числами.
     private static int calculate(int oneNum, String operator, int twoNum) throws IOException {
         switch (operator) {
             case "+":
